@@ -17,4 +17,7 @@ jobs:
       run: python --version
     - name: install python requirements
       run: pip install -r requirements.txt
+    - name: train model
+      run: python model/train.py
+
 
