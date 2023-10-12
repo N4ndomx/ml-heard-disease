@@ -46,7 +46,7 @@ jobs:
       run: sed -i 's/_/-/g' manifests/k8s.yaml
 
     - name: update sha in k8
-      run: sed -i 's/{github.sha}/${{github.event.client_payload.sha }}/g' manifests/k8s.yml
+      run: sed -i 's/{github.sha}/${{github.event.client_payload.sha }}/g' manifests/k8s.yaml
 
     - name: ls -la 
       run: cat manifests/k8s.yaml
